@@ -1,5 +1,5 @@
 
-export const types=()=>{
-    login:'[auth] Login'
+export const types={
+    login:'[auth] Login',
     logout:'[auth] Logout'
-}
+} 
