@@ -1,4 +1,4 @@
-import { type } from '@testing-library/user-event/dist/type'
+
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext'
@@ -15,9 +15,11 @@ export const LoginScreen = () => {
      type: types.login,
      payload: {name:"Juan David"}
    }
+
+   const lastPath = localStorage.getItem("lastPath" || "/marvel")
    
    dispatch(action)
-    navigate("/marvel", {
+    navigate(lastPath, {
       replace:true
     }) 
   }

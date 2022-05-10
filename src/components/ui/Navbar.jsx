@@ -28,7 +28,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                Heroes App
             </Link>
 
             <div className="navbar-collapse">
