@@ -22,7 +22,7 @@ export const HeroesApp = () => {
       user,
       dispatch
     }}> 
-    <AppRouter style={{backgroundColor:"red"}}/>
+    <AppRouter/>
     </AuthContext.Provider>
   )
 }
