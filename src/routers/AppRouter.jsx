@@ -14,14 +14,14 @@ export const AppRouter = () => {
          
          <Route path="/login" element={
          <PublicRoutes>
-         <LoginScreen/>
+         <LoginScreen />
          </PublicRoutes>}
          /> 
          
 
          <Route path="/*" element={
           <PrivateRoutes> 
-            <DashboardRoutes/>
+            <DashboardRoutes />
          </PrivateRoutes>}/>
       
       </Routes> 

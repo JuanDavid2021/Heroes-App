@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext'
 import { types } from '../../types/types'
+import "./Login.css"
 
 export const LoginScreen = () => {
 
@@ -25,12 +26,12 @@ export const LoginScreen = () => {
   }
 
   return (
-    <div className='container mb-5'>
-    <h1>Login</h1>
-    <hr/>
+    <div className='login bg-dark'>
+    <h1 className='mb-5 text-light'>Log-in</h1>
+
    
-     <button className='btn btn-primary' onClick={(e)=>handleLogin(e)}>
-        Login
+     <button className='boton btn btn-primary' onClick={(e)=>handleLogin(e)}>
+        Log-in
      </button>
     </div>
   )

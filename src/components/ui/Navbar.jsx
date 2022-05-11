@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../auth/authContext';
 import { types } from '../../types/types';
+import "./Navbar.css"
 
 
 
@@ -23,13 +24,7 @@ export const Navbar = () => {
 
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            <Link 
-                className="navbar-brand" 
-                to="/"
-            >
-                Heroes App
-            </Link>
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-3">
 
             <div className="navbar-collapse">
                 <div className="navbar-nav">
@@ -55,6 +50,13 @@ export const Navbar = () => {
                     >
                         Search
                     </NavLink>
+
+                    <Link 
+                        className="nav" 
+                        to="/"
+                    >
+                        Heroes App
+                    </Link>
                 </div>
             </div>
 

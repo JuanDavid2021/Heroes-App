@@ -30,36 +30,34 @@ export const SearchScreen = () => {
 
 
   return (
-    <>
-    <h1>Búsquedas</h1>
+    <div style={{height:"100vh"}}>
+    <h1 className='text-light mt-5' style={{display:"inline", marginLeft:"10px"}}>Búsquedas</h1>
 
     <div className='row'>
        <div className='col-5'>
-           <h4>Buscar</h4>
-           <hr/>
-
            <form onSubmit={(e)=>handleChange(e)}>
              <input
              type="text"
              placeholder="Busca un heroe"
              className='form-control'
+             style={{marginLeft:"10px"}}
              name="searchText"
              autoComplete='off'
              onChange={(e)=>handleInputChange(e)}
              value={searchText}
              />
 
-             <button type="submit" className='btn btn-primary mt-2'>
+             <button type="submit" className='btn btn-primary mt-2' style={{marginLeft:"10px"}}>
                 Buscar
              </button> 
            </form>
        </div>
 
-       <div className='col-7'>
-         <h4>Resultados</h4>
-         <hr/>
+       <div className='col-6' style={{marginTop:"-50px"}}>
+         <h1 className='text-light m-0'>Resultados</h1>
+
          {
-          (q==="")? <div className='alert alert-info'>Busca un héroe</div>
+          (q==="")? <div className='alert alert-info' style={{width:"80%", height:"50px", marginTop:"2px", textAlign:"center", justifyContent:"center"}}>Busca un héroe</div>
            : (heroesFilted.length===0) && <div className='alert alert-danger'>No hay resultados para "{q}"</div>
          }
 
@@ -73,6 +71,6 @@ export const SearchScreen = () => {
          }
        </div>
     </div>
-    </>
+    </div>
   )
 }

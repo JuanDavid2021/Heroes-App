@@ -1,0 +1,10 @@
+.nav{
+    display:flex;
+    flex-direction: row;
+    margin-top: -5px;
+    width:200px;
+    font-size:xx-large;
+    color:white;
+    text-decoration: none;
+    margin-left: 500px;
+}

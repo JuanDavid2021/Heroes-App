@@ -4,11 +4,12 @@ import { SearchScreen } from "../components/search/SearchScreen"
 import { Navbar } from "../components/ui/Navbar"
 import {Routes, Route} from "react-router-dom"
 import {HeroScreen } from "../components/hero/HeroScreen"
+import "./Dashboard.css"
 
 
 export const DashboardRoutes = () => {
   return (
-    <div className="container">
+    <div className="fondo">
        <Navbar/>
 
        <Routes>

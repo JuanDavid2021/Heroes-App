@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <div>
-    <HeroesApp style={{backgroundColor:"blue"}}/>
+    <HeroesApp className="bg-warning"/>
     </div>
   </>
 );

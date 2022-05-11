@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import "./HeroCard.css"
 
 export const HeroCard = ({
          id,
@@ -13,7 +14,7 @@ export const HeroCard = ({
 
   return (
     <div className='col'>  
-      <div className='card'>
+      <div className='cards'>
 
         <div className='row no-gutters'>
             <div className='col-4'>
@@ -26,12 +27,12 @@ export const HeroCard = ({
                 <p className='card-text'>{alter_ego}</p>
 
                 {
-                  (alter_ego !== characters) && <p className='text-muted'>{characters}</p>  
+                  (alter_ego !== characters) && <p className='text-light'>{characters}</p>  
                 
                 }
 
-                <p className='card-text'>
-                   <small className='text-muted'>{first_appearance}</small>
+                <p className='text-light'>
+                   <small className='text-light'>{first_appearance}</small>
                 </p>
 
                 <Link to={`/hero/${id}`}>
